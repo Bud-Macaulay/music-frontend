@@ -7,7 +7,7 @@ import "react-h5-audio-player/lib/styles.css";
 import Queue from "./components/Queue";
 import DraggableTrackGrid from "./components/DraggableTrackGrid";
 
-const API_BASE = "http://127.0.0.1:8000";
+const API_BASE = import.meta.env.VITE_API_BASE;
 
 function useDebounce(value, delay = 300) {
   const [debouncedValue, setDebouncedValue] = useState(value);
